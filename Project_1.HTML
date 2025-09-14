@@ -1,0 +1,386 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "4305a2e9-3b4b-4930-8c7a-407c3f07db28",
+   "metadata": {},
+   "source": [
+    "#### Let's create a civil LOGIN_FORM!"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "4479e17a-73bc-4c34-9bdd-558304b62494",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please insert your name and PinCode will be provided by the MonitorApplicants should reside in Pretoria & Johannesburg!\n"
+     ]
+    }
+   ],
+   "source": [
+    "print ('Please insert your name and PinCode will be provided by the MonitorApplicants should reside in Pretoria & Johannesburg!')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "747d9c3c-4ea5-4ee5-86a0-9e772091f831",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your name:  Lisa\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Katlego: YOU ARE WELCOME! \n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Please inert PinCode:  123456789\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Katlego: WELCOME, YOU ARE AUTHORISED! \n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Email_Address:  li@gmail.com\n",
+      "Where do you Reside? :  Johannesburg\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Katlego: WELCOME, YOU ARE SIGNED IN! \n"
+     ]
+    }
+   ],
+   "source": [
+    "Monitor_N ='Katlego'\n",
+    "Attendance_List = str(input('Enter your name: '))\n",
+    "if Attendance_List == 'Josiah' or 'Mirelda' or 'Joe' or 'Peter' or 'Katlego':\n",
+    "    print (f'{Monitor_N}: YOU ARE WELCOME! ')\n",
+    "elif Attendance_List not in Attendance_List:\n",
+    "    print (f'{Monitor_N}: OOPS!, SORRY REGISTRATION NOT RECOGNISED! ')\n",
+    "\n",
+    "PinCode = int (input('Please inert PinCode: '))\n",
+    "if PinCode == 123456789:\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE AUTHORISED! ')\n",
+    "else:\n",
+    "    print (f'{Monitor_N}: SORRY, THAT IS INCORRECT! ')\n",
+    "\n",
+    "Email_Address = bool (input('Email_Address: '))\n",
+    "\n",
+    "Place = str (input('Where do you Reside? : '))\n",
+    "if Place == 'PRETORIA' or 'JOHANNESBURG':\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')\n",
+    "elif Place == 'Pretoria' and 'pretoria' and 'Johannesburg' and 'johannesburg':\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')\n",
+    "else:\n",
+    "    print (f'{Monitor_N}: THAT IS AN INVALID INPUT! ')\n",
+    "while Attendance_List ==():\n",
+    "    Attendance_List = str(input('Enter your name: '))\n",
+    "    PinCode = int (input('Please inert PinCode! '))\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')\n",
+    "class Student:\n",
+    "    def __init__(self, Name, Marks):\n",
+    "        \n",
+    "        self.Name = Name\n",
+    "        self.Marks = Marks\n",
+    "\n",
+    "        self.Student_Marks = 85\n",
+    "        \n",
+    "    def calc_Did_I_Pass (self):\n",
+    "        if self.Student_Marks >50 or 85:\n",
+    "            return 'Pass'\n",
+    "        else:\n",
+    "            return 'Failed'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "93bcbe86-da8b-4166-81f4-c46f7d4ffa1d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Katlego 85\n"
+     ]
+    }
+   ],
+   "source": [
+    "Katlego = Student ('Katlego', 85)\n",
+    "print ('Katlego', 85)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "a3711f1b-8c5c-492a-bc39-fd3113f65b18",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Pass'"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "Katlego.calc_Did_I_Pass()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3a73dcd3-17b8-49d1-a507-00a15dda2799",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Place ='Johannesburg' and 'Pretoria'\n",
+    "Attendance_List = input('')\n",
+    "Monitor_N = ('Katlego')\n",
+    "PinCode = 123456789\n",
+    "if PinCode == 123456789:\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')\n",
+    "else:\n",
+    "    print (f'{Monitor_N}: SORRY, THAT IS INCORRECT! ')\n",
+    "if Attendance_List == 'Josiah' or 'Mirelda' or 'Joe' or 'Peter' or 'Katlego':\n",
+    "    print (f'{Monitor_N}: YOU ARE SIGNED IN! ')\n",
+    "elif Attendance_List not in Attendance_List:\n",
+    "    print (f'{Monitor_N}: OOPS!, SORRY REGISTRATION NOT RECOGNISED! ')\n",
+    "if Place == 'PRETORIA' or 'JOHANNESBURG':\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')\n",
+    "elif Place == 'Pretoria' and 'pretoria' and 'Johannesburg' and 'johannesburg':\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')\n",
+    "else:\n",
+    "    print (f'{Monitor_N}: THAT IS AN INVALID INPUT! ')\n",
+    "while Attendance_List ==():\n",
+    "    Attendance_List = str(input('Enter your name: '))\n",
+    "    PinCode = int (input('Please inert PinCode! '))\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')\n",
+    "\n",
+    "class Student:\n",
+    "    def __init__(self, Name, Marks):\n",
+    "        \n",
+    "        self.Name = Name\n",
+    "        self.Marks = Marks\n",
+    "\n",
+    "        self.Student_Marks = 85\n",
+    "        \n",
+    "    def calc_Did_I_Pass (self):\n",
+    "        if self.Student_Marks >50 or 85:\n",
+    "            return 'Pass'\n",
+    "        else:\n",
+    "            return 'Failed'\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "00b41bac-ffae-4ac3-87b4-310a49db4850",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Student:\n",
+    "    def __init__(self, Name, Marks):\n",
+    "        \n",
+    "        self.Name = Name\n",
+    "        self.Marks = Marks\n",
+    "\n",
+    "        self.Student_Marks = 85\n",
+    "        \n",
+    "    def calc_Did_I_Pass (self):\n",
+    "        if self.Student_Marks >50 or 85:\n",
+    "            return 'Pass'\n",
+    "        else:\n",
+    "            return 'Failed'\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d408c796-643e-4306-ad2c-9f85d90527af",
+   "metadata": {},
+   "source": [
+    "#   Oops"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f3d45d3-d467-40e5-9cd5-63054d869cd1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if Attendance_List and PinCode == Attendance_List and PinCode == 123456789:\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')\n",
+    "elif Attendance_List not in Attendance_List:\n",
+    "    print (f'{Monitor_N}: OOPS!, SORRY REGISTRATION NOT RECOGNISED! ')\n",
+    "while Attendance_List ==():\n",
+    "    Attendance_List = str(input('Enter your name: '))\n",
+    "    PinCode = int (input('Please inert PinCode! '))\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f1c9547d-a5cd-4743-9cfd-4fc790792977",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "list = ('Josiah',\n",
+    "        'Mirelda',\n",
+    "        'Joe',\n",
+    "        'Peter',\n",
+    "        'Katlego')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9f8302b8-63ee-49b3-8e4e-39b41c3ed66a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "while Attendance_List ==():\n",
+    "    Attendance_List = str(input('Enter your name: '))\n",
+    "    PinCode = int (input('Please inert PinCode! '))\n",
+    "    print (f'{Monitor_N}: WELCOME, YOU ARE SIGNED IN! ')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ca93d884-654f-4b0b-9f60-e7ec341f79f6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "72991e4c-58c6-44fc-ac28-4adbafe3fe9d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Mirelda = Student ('Mirelda', 85)\n",
+    "print ('Mirelda', 85)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "72905558-7a81-4a77-ae05-a40bebb939d5",
+   "metadata": {},
+   "source": [
+    "#  Story for another day!"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "29cb3526-e0d0-4988-a55c-37535ef5d789",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import flask, Django,"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4e5436f9-651f-45d6-af24-afbff7583023",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Fernet = int (input.encrypt())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "faacbcea-5466-4eb7-b346-e04890333222",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import fernet\n",
+    "\n",
+    "key = Fernet.generata_key()\n",
+    "f = Fernet(key)\n",
+    "\n",
+    "imput_integer = 'Enter Password!'\n",
+    "\n",
+    "encrypt_interger = f.encrypt(input_interger.encode())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "361ddbb1-e197-4164-8a28-c96f7de15f6c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Mirelda.calc_Did_I_Pass()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "09949a0f-3174-467d-9d9f-3cb0ac62fcca",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
